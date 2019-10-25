@@ -1,0 +1,23 @@
+{
+  "site": "linkedin.com/joey",
+  "objects": [
+    {
+      "name": "name",
+      "xpath": "//div"
+    },
+    {
+      "name": "jobs",
+      "xpath": "//div[id='jobs']",
+      "children": [
+        {
+          "name": "job-name",
+          "xpath": "div[id='job-name']"
+        },
+        {
+          "name": "institution",
+          "xpath": "div[id='job-location']"
+        }
+      ]
+    }
+  ]
+}
