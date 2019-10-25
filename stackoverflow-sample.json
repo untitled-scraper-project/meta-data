@@ -1,0 +1,23 @@
+{
+  "site": "https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim",
+  "objects": [
+    {
+      "name": "question",
+      "xpath": "//*[@id='question-header']/h1/a"
+    },
+    {
+      "name": "question-description",
+      "xpath": "//*[@id='question']/div[2]/div[2]/div[1]"
+    },
+    {
+      "name": "answers",
+      "xpath": "//*[@id='answers']",
+      "children": [
+        {
+          "name": "answer",
+          "xpath": "/div[*]/div/div[2]/div[1]"
+        }
+      ]
+    }
+  ]
+}
