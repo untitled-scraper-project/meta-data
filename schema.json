@@ -1,0 +1,59 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "JSONSchema that describes the schema for scraping data",
+  "required": [
+    "site",
+    "objects"
+  ],
+  "properties": {
+    "site": {
+      "$id": "#/properties/site",
+      "type": "string",
+      "title": "the website to scrape",
+      "default": "",
+      "examples": [
+        "linkedin.com/joey"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "objects": {
+      "$id": "#/properties/objects",
+      "type": "array",
+      "title": "list of object to be scraped",
+      "items": {
+        "$id": "#/properties/objects/items",
+        "type": "object",
+        "title": "an object to be scraped",
+        "required": [
+          "name",
+          "xpath"
+        ],
+        "properties": {
+          "name": {
+            "$id": "#/properties/objects/items/properties/name",
+            "type": "string",
+            "title": "name of the scraped object. Data scraped should be stored to this name",
+            "default": "",
+            "examples": [
+              "name"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "xpath": {
+            "$id": "#/properties/objects/items/properties/xpath",
+            "type": "string",
+            "title": "xpath of the object. this should indicate how this object is to be scraped",
+            "default": "",
+            "examples": [
+              "//div"
+            ],
+            "pattern": "^(.*)$"
+          }
+        }
+      }
+    }
+  }
+}
