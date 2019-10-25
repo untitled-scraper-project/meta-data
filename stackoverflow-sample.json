@@ -16,6 +16,10 @@
         {
           "name": "answer",
           "xpath": "/div[*]/div/div[2]/div[1]"
+        },
+        {
+          "name": "points",
+          "xpath": "/div[*]/div/div[1]/div/div[1]/div[1]"
         }
       ]
     }
