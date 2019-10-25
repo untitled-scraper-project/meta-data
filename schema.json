@@ -5,12 +5,12 @@
   "type": "object",
   "title": "JSONSchema that describes the schema for scraping data",
   "required": [
-    "site",
+    "url",
     "objects"
   ],
   "properties": {
-    "site": {
-      "$id": "#/properties/site",
+    "url": {
+      "$id": "#/properties/url",
       "type": "string",
       "title": "the website to scrape",
       "default": "",
